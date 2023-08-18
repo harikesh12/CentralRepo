@@ -3,7 +3,13 @@ pipeline{
   stages{
     stage("Hello"){
       steps{
-        echo "Hello world"
+        scripts{
+        git url:'https://github.com/harikesh12/CentralRepo.git' , branch:'master'
+        }
+ steps{
+        sh 'cat README.md'
+        }
+        
       }
     }
   }
