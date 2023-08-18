@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("Hello"){
       steps{
-        scripts{
+        script{
         git url:'https://github.com/harikesh12/CentralRepo.git' , branch:'master'
         }
  steps{
