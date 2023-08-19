@@ -7,6 +7,10 @@ pipeline{
         sh 'cat README.md'
      
       }
+      steps{
+        sh 'echo $argUrl'
+     
+      }
     }
   }
 }
