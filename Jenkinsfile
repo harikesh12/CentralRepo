@@ -9,8 +9,9 @@ pipeline{
       }
     }
       stage("printing URL"){
+        steps{
         sh 'echo $argUrl'
-     
+        }
       
     }
   }
