@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage("Hello"){
       steps{
-        git url:'https://github.com/harikesh12/CentralRepo.git' , branch:'master', credentialsId: 'dsl-pipeline'
+        git url:'https://github.com/harikesh12/CentralRepo.git' , branch:'master'
         sh 'cat README.md'
      
       }
